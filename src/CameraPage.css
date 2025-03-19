@@ -1,0 +1,76 @@
+/* Camera Page container */
+.cameraPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cameraPage__content {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .cameraPage__video {
+    flex: 2;
+    background-color: #000;
+  }
+  
+  .cameraPage__video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .cameraPage__info {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cameraPage__info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .cameraPage__info p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button styling */
+  .cameraPage__button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cameraPage__button:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .cameraPage__button:disabled {
+    background-color: #ccc; /* Gray when disabled */
+    cursor: not-allowed;
+  }
+  
